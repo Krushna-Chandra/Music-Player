@@ -44,9 +44,14 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 <br>
 Krushna Chandra Bindhani
 <br>
-GitHub: @yourusername
 <br>
-LinkedIn: Your LinkedIn Profile
+<br>
+<br>
+
+
+GitHub: @Krushna Chandra Bindhani
+<br>
+LinkedIn: ( https://www.linkedin.com/in/krushna-chandra-bindhani-1b1342275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )
 
 <br>
 🎉 Enjoy your music! 🎶.
