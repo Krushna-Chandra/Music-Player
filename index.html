@@ -18,12 +18,12 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
-            <img src="C:\Users\gitan\OneDrive\Desktop\images\puspa2.png" class="song-img">
-            <h1>Pushpa Pushpa</h1>
-            <p>Nakash Aziz</p>
+            <img src="king3.jpg" class="song-img">
+            <h1>_Bhojpuri_</h1>
+            <p>Krushna</p>
 
             <audio id="song">
-                <source src="C:\Users\gitan\OneDrive\Desktop\images\[iSongs.info] 01 - Pushpa Pushpaa.mp3" type="audio/mpeg">
+                <source src="_Khesari Lal Yadav _ टूट जाई पलंग राजा जी - Tut Jai Palang Raja Ji _ भोजपुरी गीत _Bhojpuri Song 2022(M4A_128K).m4a" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">
 
@@ -37,40 +37,52 @@
     </div>
 
     <script>
-        let progress=document.getElementById("progress")
-        let song=document.getElementById("song")
-        let ctrlIcon=document.getElementById("ctrlIcon")
+        let progress = document.getElementById("progress");
+let song = document.getElementById("song");
+let ctrlIcon = document.getElementById("ctrlIcon");
 
-        song.onloadedmetadata = function(){
-            progress.max = song.duration;
+song.onloadedmetadata = function () {
+    progress.max = song.duration;
+    progress.value = song.currentTime;
+};
+
+function playpause() {
+    if (ctrlIcon.classList.contains("fa-pause")) {
+        song.pause();
+        ctrlIcon.classList.remove("fa-pause");
+        ctrlIcon.classList.add("fa-play");
+    } else {
+        song.play();
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+        updateProgress();
+    }
+}
+
+function updateProgress() {
+    setInterval(() => {
+        if (!song.paused) {
             progress.value = song.currentTime;
         }
+    }, 500);
+}
 
-        function playpause(){
-            if(ctrlIcon.classList.contains("fa-pause")){
-                song.pause();
-                ctrlIcon.classList.remove("fa-pause");
-                ctrlIcon.classList.add("fa-play");
-            }
-            else{
-                song.play();
-                ctrlIcon.classList.add("fa-pause");
-                ctrlIcon.classList.remove("fa-play");
-            }
-        }
+document.querySelector('.fa-forward').onclick = () => {
+    song.currentTime = Math.min(song.currentTime + 5, song.duration);
+};
 
-        if(song.play()){
-            setInterval(()=>{
-                progress.value = song.currentTime;
-            },500);
-        }
+document.querySelector('.fa-backward').onclick = () => {
+    song.currentTime = Math.max(song.currentTime - 5, 0);
+};
 
-        progress.onchange = function(){
-            song.play();
-            song.currentTime = progress.value;
-            ctrlIcon.classList.add("fa-pause");
-            ctrlIcon.classList.remove("fa-play");
-        }
+progress.onchange = function () {
+    song.currentTime = progress.value;
+    if (song.paused) {
+        song.play();
+        ctrlIcon.classList.add("fa-pause");
+        ctrlIcon.classList.remove("fa-play");
+    }
+};
 
     </script>
 
