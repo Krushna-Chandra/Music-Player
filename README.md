@@ -23,21 +23,30 @@ A basic music player built using HTML and CSS. This project demonstrates how to 
 ---
 
 ## 📂 Project Structure
+<br>
 
 🌟 Future Improvements
+<br>
 Add JavaScript for functionality (play, pause, volume control, etc.).
+<br>
 Integrate a music library or playlist feature.
+<br>
 Add animations and transitions for a smoother experience.
+<br>
 
 🤝 Contributing
+<br>
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+<br>
 
 
 👤 Author
+<br>
 Krushna Chandra Bindhani
-
+<br>
 GitHub: @yourusername
+<br>
 LinkedIn: Your LinkedIn Profile
 
-
+<br>
 🎉 Enjoy your music! 🎶.
