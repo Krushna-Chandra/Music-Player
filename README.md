@@ -45,10 +45,6 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 Krushna Chandra Bindhani
 <br>
 <br>
-<br>
-<br>
-
-
 GitHub: @Krushna Chandra Bindhani
 <br>
 LinkedIn: ( https://www.linkedin.com/in/krushna-chandra-bindhani-1b1342275?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )
